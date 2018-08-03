@@ -1,9 +1,11 @@
 import * as React from 'react';
+import PrimaryNav from '../PrimaryNav';
 
-class App extends React.Component {
-  public render() {
-    return <div className="App">Hellow world!</div>;
-  }
-}
+const App = () => (
+  <div className="app">
+    <PrimaryNav />
+    <div className="content">Content</div>
+  </div>
+);
 
 export default App;

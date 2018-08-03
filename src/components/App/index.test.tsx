@@ -1,6 +1,6 @@
+import { shallow } from 'enzyme';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { shallow } from 'enzyme';
 import App from './';
 
 it('renders without crashing', () => {
@@ -9,7 +9,7 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('renders a div', () => {
+it('renders 2 divs', () => {
   const wrapper = shallow(<App />);
-  expect(wrapper.find('div').length).toEqual(1);
+  expect(wrapper.find('div').length).toEqual(2);
 });
