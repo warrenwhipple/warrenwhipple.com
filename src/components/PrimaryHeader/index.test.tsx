@@ -1,10 +1,10 @@
 import * as Enzyme from 'enzyme';
 import * as React from 'react';
-import PrimaryNav from './';
+import PrimaryHeader from './';
 
 let wrapper: Enzyme.ShallowWrapper;
 beforeEach(() => {
-  wrapper = Enzyme.shallow(<PrimaryNav />);
+  wrapper = Enzyme.shallow(<PrimaryHeader />);
 });
 
 it('renders a div', () => {

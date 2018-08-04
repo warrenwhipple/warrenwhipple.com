@@ -1,9 +1,9 @@
 import * as React from 'react';
-import PrimaryNav from '../PrimaryNav';
+import PrimaryHeader from '../PrimaryHeader';
 
 const App = () => (
   <div className="app">
-    <PrimaryNav siteTitle="Warren Whipple" />
+    <PrimaryHeader siteTitle="Warren Whipple" />
     <div className="content">Content</div>
   </div>
 );
