@@ -3,7 +3,7 @@ import PrimaryNav from '../PrimaryNav';
 
 const App = () => (
   <div className="app">
-    <PrimaryNav />
+    <PrimaryNav siteTitle="Warren Whipple" />
     <div className="content">Content</div>
   </div>
 );
