@@ -1,12 +1,13 @@
 import * as React from 'react';
 
-interface Props {
-  siteTitle?: string;
-}
-
-const PrimaryHeader = (props: Props) => (
+const PrimaryHeader = () => (
   <div className="primaryHeader">
-    <h1 className="siteTitle">{props.siteTitle}</h1>
+    <h1 className="siteTitle">Warren Whipple</h1>
+    <ul className="primaryNav">
+      <li>Experience</li>
+      <li>Code</li>
+      <li>Websites</li>
+    </ul>
   </div>
 );
 

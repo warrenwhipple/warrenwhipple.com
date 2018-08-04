@@ -11,13 +11,20 @@ it('renders a div', () => {
   expect(wrapper.find('div').length).toEqual(1);
 });
 
-it('renders siteTile as h1', () => {
-  wrapper.setProps({ siteTitle: 'Test Title' });
+it('renders h1 siteTile "Warren Whipple"', () => {
   expect(wrapper.find('h1').length).toEqual(1);
   expect(
     wrapper
       .find('h1')
       .first()
       .text()
-  ).toEqual('Test Title');
+  ).toEqual('Warren Whipple');
+});
+
+it('renders ul primaryNav', () => {
+  expect(wrapper.find('ul').length).toEqual(1);
+});
+
+it('renders 3 primaryNav items', () => {
+  expect(wrapper.find('li').length).toEqual(3);
 });
