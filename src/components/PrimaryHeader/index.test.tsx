@@ -11,14 +11,8 @@ it('renders a div', () => {
   expect(wrapper.find('div').length).toEqual(1);
 });
 
-it('renders h1 siteTile "Warren Whipple"', () => {
+it('renders h1 siteTile', () => {
   expect(wrapper.find('h1').length).toEqual(1);
-  expect(
-    wrapper
-      .find('h1')
-      .first()
-      .text()
-  ).toEqual('Warren Whipple');
 });
 
 it('renders ul primaryNav', () => {

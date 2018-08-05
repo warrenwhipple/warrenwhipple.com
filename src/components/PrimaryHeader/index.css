@@ -1,0 +1,22 @@
+.primaryHeader {
+  background-color: #222;
+  color: #fff;
+  text-align: right;
+}
+.primaryHeader a {
+  color: #fff;
+  text-decoration: none;
+}
+.siteTitle {
+  margin: 60px 40px 40px;
+  font-size: 40px;
+}
+.primaryNav {
+  margin: 40px;
+  list-style: none;
+  padding: 0;
+  font-size: 30px;
+}
+.primaryNav li {
+  margin: 20px 0;
+}

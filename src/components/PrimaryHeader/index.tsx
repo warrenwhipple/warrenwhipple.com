@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import './index.css';
 
 const PrimaryHeader = () => (
   <div className="primaryHeader">
     <h1 className="siteTitle">
-      <Link to="/">Warren Whipple</Link>
+      <Link to="/">Site Title</Link>
     </h1>
     <ul className="primaryNav">
       <li>
