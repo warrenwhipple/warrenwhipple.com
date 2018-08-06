@@ -6,8 +6,6 @@ import PrimaryHeader from '../PrimaryHeader';
 import Experience from '../Experience';
 import Landing from '../Landing';
 
-import './index.css';
-
 const App = () => (
   <BrowserRouter>
     <div className="app">
