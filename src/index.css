@@ -23,7 +23,6 @@ body {
   height: 100%;
 }
 .contentWrapper {
-  background-color: #ddd;
   margin-left: 30%;
   padding: 40px;
 }
@@ -107,4 +106,12 @@ body {
 .content {
   max-width: 40em;
   margin-right: auto;
+}
+
+/* Portfolio sections */
+.portfolioSection {
+  margin-top: 60px;
+}
+.portfolioSection img {
+  max-width: 100%;
 }
