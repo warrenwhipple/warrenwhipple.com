@@ -1,8 +1,12 @@
 import * as React from 'react';
 
+import PortfolioItem from '../PortfolioItem';
+
 const Websites = () => (
   <div className="websites">
     <p>Websites I created and/or maintained.</p>
+
+    <PortfolioItem itemName="Test Title" itemLink="http://example.com" />
 
     <div className="portfolioSection">
       <h2>
