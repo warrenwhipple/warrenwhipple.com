@@ -94,6 +94,9 @@ h1 {
   padding: 0;
   list-style: none;
 }
+.sideNav li a {
+  padding: 20px 0;
+}
 
 .topNav a,
 .sideNav a {
