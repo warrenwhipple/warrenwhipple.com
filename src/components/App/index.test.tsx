@@ -9,7 +9,9 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('renders 2 divs', () => {
+it('renders wrappers', () => {
   const wrapper = shallow(<App />);
-  expect(wrapper.find('div').length).toEqual(2);
+  expect(wrapper.find('.topNavWrapper').length).toEqual(1);
+  expect(wrapper.find('.sideNavWrapper').length).toEqual(1);
+  expect(wrapper.find('.contentWrapper').length).toEqual(1);
 });

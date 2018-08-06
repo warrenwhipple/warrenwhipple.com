@@ -1,24 +1,24 @@
 import * as Enzyme from 'enzyme';
 import * as React from 'react';
-import PrimaryHeader from './';
+import TopNav from './';
 
 let wrapper: Enzyme.ShallowWrapper;
 beforeEach(() => {
-  wrapper = Enzyme.shallow(<PrimaryHeader />);
+  wrapper = Enzyme.shallow(<TopNav />);
 });
 
 it('renders a div', () => {
   expect(wrapper.find('div').length).toEqual(1);
 });
 
-it('renders h1 siteTile', () => {
+it('renders h1', () => {
   expect(wrapper.find('h1').length).toEqual(1);
 });
 
-it('renders ul primaryNav', () => {
+it('renders ul', () => {
   expect(wrapper.find('ul').length).toEqual(1);
 });
 
-it('renders 3 primaryNav items', () => {
-  expect(wrapper.find('li').length).toEqual(3);
+it('renders li(s)', () => {
+  expect(wrapper.find('li').length).toBeGreaterThanOrEqual(1);
 });
