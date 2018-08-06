@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 const SideNav = () => (
-  <div className="sideNav">
+  <div className="topNav">
     <h1>
       <Link to="/">Site Title</Link>
     </h1>
