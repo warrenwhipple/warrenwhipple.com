@@ -6,7 +6,7 @@ const Websites = () => (
   <div className="websites">
     <p>Websites I created and/or maintained.</p>
 
-    <PortfolioItem itemName="Test Title" itemLink="http://example.com" />
+    <PortfolioItem itemName="Test Title" link="http://example.com" />
 
     <div className="portfolioSection">
       <h2>
