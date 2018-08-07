@@ -7,6 +7,6 @@ beforeEach(() => {
   wrapper = Enzyme.shallow(<Websites />);
 });
 
-it('renders a div', () => {
-  expect(wrapper.find('div').length).toEqual(1);
+it('renders a wrapper div', () => {
+  expect(wrapper.find('div.websites').length).toEqual(1);
 });
