@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './index.css';
 
 export interface Props {
   title: string;
@@ -7,18 +8,18 @@ export interface Props {
   screenshot?: string;
   description?: string;
   timeframe?: string;
-  skills?: string;
+  skills?: string[];
 }
 
 const PortfolioItem = (props: Props) => (
-  <div className="portfolioItem">
+  <div className="portfolio__item">
     <h2>
       <a href={props.link} target="_blank" rel="noopener">
         {props.title}
       </a>
     </h2>
     {props.description && (
-      <div className="portfolioDescription">{props.description!}</div>
+      <div className="portfolio__description">{props.description!}</div>
     )}
     {props.screenshot && (
       <a href={props.link} target="_blank" rel="noopener">
@@ -26,10 +27,10 @@ const PortfolioItem = (props: Props) => (
       </a>
     )}
     {props.timeframe && (
-      <div className="portfolioTimeframe">{props.timeframe!}</div>
+      <div className="portfolio__timeframe">{props.timeframe!}</div>
     )}
     {props.extraLinks && (
-      <ul className="portfolioExtraLinks">
+      <ul className="portfolio__extraLinks">
         {props.extraLinks.map(extraLink => (
           <li key={extraLink.text}>
             <a href={extraLink.url} target="_blank" rel="noopener">
@@ -39,7 +40,13 @@ const PortfolioItem = (props: Props) => (
         ))}
       </ul>
     )}
-    {props.skills && <div className="portfolioSkills">{props.skills!}</div>}
+    {props.skills && (
+      <ul className="portfolio__skills">
+        {props.skills.map(skill => (
+          <li key={skill}>{skill}</li>
+        ))}
+      </ul>
+    )}
   </div>
 );
 
