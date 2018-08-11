@@ -6,7 +6,18 @@ const Websites = () => (
   <div className="websites">
     <p>Websites I created and/or maintained.</p>
 
-    <PortfolioItem itemName="Test Title" link="http://example.com" />
+    <PortfolioItem
+      title="bioethics.unc.edu"
+      link="https://bioethics.unc.edu"
+      extraLinks={[
+        { text: 'Google', url: 'https://google.com' },
+        { text: 'Bing', url: 'https://bing.com' }
+      ]}
+      screenshot="bioethics.unc.edu.jpg"
+      description="A WordPress website for the UNC Center for Bioethics."
+      timeframe="2012 March - 2018 February"
+      skills="Migration of HTML to WP. Content management. CSS styling. WP Toolset custom types and templates. Embedded JavaScript."
+    />
 
     <div className="portfolioSection">
       <h2>
