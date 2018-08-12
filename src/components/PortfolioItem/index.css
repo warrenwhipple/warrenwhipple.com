@@ -63,3 +63,9 @@
     margin: 0;
   }
 }
+
+@media screen and (min-width: 600px) {
+  .portfolio__item:first-child {
+    margin-top: 60px;
+  }
+}

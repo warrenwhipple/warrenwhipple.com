@@ -1,19 +1,20 @@
 .sideNav {
   text-align: right;
-  margin: 40px;
+  margin: 60px 20px 0;
 }
 .sideNav h1 {
   margin: 0 0 60px;
   font-size: 30px;
-  font-weight: normal;
+  font-weight: 200;
 }
 .sideNav ul {
   margin: 0;
   padding: 0;
   font-size: 24px;
+  font-weight: 200;
 }
 .sideNav li {
-  margin: 30px 0;
+  margin: 20px 0;
   padding: 0;
   list-style: none;
 }
