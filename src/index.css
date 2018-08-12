@@ -6,6 +6,11 @@ body {
   font-size: 20px;
 }
 
+a {
+  color: #ff4477;
+  text-decoration: none;
+}
+
 /* Responsive nav layout */
 .topNavWrapper {
   display: none;

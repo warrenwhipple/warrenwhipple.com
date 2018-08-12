@@ -4,44 +4,42 @@ import PortfolioItem from '../PortfolioItem';
 
 const Websites = () => (
   <div className="websites">
-    <p>Websites I created and/or maintained.</p>
-
     <PortfolioItem
       title="bioethics.unc.edu"
       link="https://bioethics.unc.edu"
-      extraLinks={[
-        { text: 'Google', url: 'https://google.com' },
-        { text: 'Bing', url: 'https://bing.com' }
-      ]}
       screenshot="bioethics.unc.edu.jpg"
-      description="The UNC Center for Bioethics website."
-      timeframe="2012 March - 2018 February"
+      description="UNC Center for Bioethics website."
+      timeframe="2012 March to 2018 February"
       skills={[
-        'Migration of HTML to WP',
-        'Content management',
-        'CSS styling',
+        'Static HTML',
+        'Migration to WordPress',
+        'CSS',
         'WP Toolset custom types and templates',
-        'Embedded JavaScript'
+        'Embedded JavaScript',
+        'Content management'
       ]}
     />
-
+    <PortfolioItem
+      title="med.unc.edu/socialmed"
+      link="https://www.med.unc.edu/socialmed/"
+      screenshot="socialmedicine.jpg"
+      description="UNC Department of Social Medicine Website."
+      timeframe="2008 January to 2018 February"
+      skills={[
+        'Static HTML',
+        'Migration to Plone',
+        'Migration to WordPress',
+        'CSS',
+        'Content management'
+      ]}
+    />
     <PortfolioItem
       title="cennc.org"
       link="https://cennc.org"
-      extraLinks={[
-        { text: 'Google', url: 'https://google.com' },
-        { text: 'Bing', url: 'https://bing.com' }
-      ]}
       screenshot="cennc.org.jpg"
-      description="The Clinical Ethics Network of North Carolina website."
-      timeframe="2015 August - 2018 February"
-      skills={[
-        'Initial WP deployment to BlueHost',
-        'Content management',
-        'CSS styling',
-        'WP customization',
-        'Migration from BlueHost to UNC WP server'
-      ]}
+      description="Clinical Ethics Network of North Carolina website."
+      timeframe="2015 August to 2018 February"
+      skills={['Bluehost deployment', 'WordPress', 'CSS', 'PHP custom plugins']}
     />
   </div>
 );
