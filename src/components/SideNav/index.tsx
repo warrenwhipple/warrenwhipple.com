@@ -1,18 +1,18 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './index.css';
 
 const SideNav = () => (
   <div className="sideNav">
     <h1>
-      <Link to="/">Warren Whipple</Link>
+      <NavLink to="/">Warren Whipple</NavLink>
     </h1>
     <ul>
       <li>
-        <Link to="/code">Code</Link>
+        <NavLink to="/code">Code</NavLink>
       </li>
       <li>
-        <Link to="/websites">Websites</Link>
+        <NavLink to="/websites">Websites</NavLink>
       </li>
     </ul>
   </div>

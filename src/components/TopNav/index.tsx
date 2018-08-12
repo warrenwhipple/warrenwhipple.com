@@ -1,20 +1,22 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './index.css';
 
 const SideNav = () => (
   <div className="topNav">
     <h1>
-      <Link to="/">
+      <NavLink to="/">
         <span>Warren Whipple</span>
-      </Link>
+      </NavLink>
     </h1>
     <ul>
       <li>
-        <Link to="/code">Code</Link>
+        <NavLink to="/code" activeClassName="active">
+          Code
+        </NavLink>
       </li>
       <li>
-        <Link to="/websites">Sites</Link>
+        <NavLink to="/websites">Sites</NavLink>
       </li>
     </ul>
   </div>

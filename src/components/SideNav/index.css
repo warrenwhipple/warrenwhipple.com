@@ -21,3 +21,6 @@
 .sideNav li a {
   padding: 10px 0;
 }
+.sideNav li a.active {
+  color: #ff88aa;
+}

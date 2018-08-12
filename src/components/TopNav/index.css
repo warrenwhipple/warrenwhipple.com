@@ -47,3 +47,6 @@
     padding: 20px;
   }
 }
+.topNav li a.active {
+  color: #ff88aa;
+}
