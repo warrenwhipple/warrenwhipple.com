@@ -5,7 +5,9 @@ import './index.css';
 const SideNav = () => (
   <div className="topNav">
     <h1>
-      <Link to="/">Site Title</Link>
+      <Link to="/">
+        <span>Warren Whipple</span>
+      </Link>
     </h1>
     <ul>
       <li>

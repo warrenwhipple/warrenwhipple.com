@@ -22,9 +22,11 @@ const PortfolioItem = (props: Props) => (
       <div className="portfolio__description">{props.description!}</div>
     )}
     {props.screenshot && (
-      <a href={props.link} target="_blank" rel="noopener">
-        <img src={props.screenshot!} />
-      </a>
+      <div className="portfolio__screenshot">
+        <a href={props.link} target="_blank" rel="noopener">
+          <img src={props.screenshot!} />
+        </a>
+      </div>
     )}
     {props.timeframe && (
       <div className="portfolio__timeframe">{props.timeframe!}</div>

@@ -1,25 +1,36 @@
 /* TopNav */
+/* height = 60px */
+
 .topNav {
   display: flex;
   justify-content: space-between;
 }
-.topNav h1 a {
+.topNav h1 {
   margin: 0;
-  padding: 20px;
-  line-height: 70px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 200;
+}
+.topNav h1 a {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 10px;
 }
 .topNav ul {
   display: flex;
-  margin: 0 10px 0 0;
-  padding: 0;
-}
-.topNav li {
-  list-style: none;
   margin: 0;
   padding: 0;
   font-size: 20px;
+  text-transform: lowercase;
+}
+.topNav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .topNav li a {
-  padding: 25px 15px;
-  line-height: 70px;
+  display: block;
+  padding: 20px 15px;
+  font-weight: 200;
 }
