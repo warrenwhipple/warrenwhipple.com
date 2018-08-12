@@ -34,3 +34,16 @@
   padding: 20px 15px;
   font-weight: 200;
 }
+
+@media screen and (min-width: 400px) {
+  .topNav h1 {
+    font-size: 20px;
+  }
+  .topNav h1 a {
+    height: 60px;
+    padding: 0 20px;
+  }
+  .topNav li a {
+    padding: 20px;
+  }
+}

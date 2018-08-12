@@ -45,3 +45,21 @@
 .portfolio__skills li:after {
   content: '. ';
 }
+
+@media screen and (min-width: 400px) {
+  .portfolio__item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .portfolio__item h2,
+  .portfolio__description,
+  .portfolio__screenshot,
+  .portfolio__timeframe,
+  .portfolio__skills {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .portfolio__screenshot img {
+    margin: 0;
+  }
+}
