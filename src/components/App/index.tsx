@@ -1,5 +1,10 @@
 import * as React from 'react';
-import { Route, RouteComponentProps, withRouter } from 'react-router-dom';
+import {
+  Redirect,
+  Route,
+  RouteComponentProps,
+  withRouter
+} from 'react-router-dom';
 
 import SideNav from '../SideNav';
 import TopNav from '../TopNav';
@@ -10,6 +15,8 @@ import Websites from '../Websites';
 import './index.css';
 
 interface Props extends RouteComponentProps<any> {}
+
+const CodeRedirect = () => <Redirect to="/code" />;
 
 class App extends React.Component<Props> {
   public componentDidUpdate(prevProps: Props) {
@@ -28,7 +35,7 @@ class App extends React.Component<Props> {
         </div>
         <div className="contentWrapper">
           <div className="content">
-            <Route exact path="/" component={Code} />
+            <Route exact path="/" render={CodeRedirect} />
             <Route path="/code" component={Code} />
             <Route path="/websites" component={Websites} />
           </div>
