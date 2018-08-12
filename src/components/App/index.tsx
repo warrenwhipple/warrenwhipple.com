@@ -5,8 +5,6 @@ import SideNav from '../SideNav';
 import TopNav from '../TopNav';
 
 import Code from '../Code';
-import Experience from '../Experience';
-import Landing from '../Landing';
 import Websites from '../Websites';
 
 import './index.css';
@@ -22,10 +20,9 @@ const App = () => (
       </div>
       <div className="contentWrapper">
         <div className="content">
-          <Route exact path="/" component={Landing} />
+          <Route exact path="/" component={Code} />
           <Route path="/code" component={Code} />
           <Route path="/websites" component={Websites} />
-          <Route path="/experience" component={Experience} />
         </div>
       </div>
     </div>

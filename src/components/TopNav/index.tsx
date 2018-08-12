@@ -16,9 +16,6 @@ const SideNav = () => (
       <li>
         <Link to="/websites">Sites</Link>
       </li>
-      <li>
-        <Link to="/experience">Exp</Link>
-      </li>
     </ul>
   </div>
 );
