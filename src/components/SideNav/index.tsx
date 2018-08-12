@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import './index.css';
 
 const SideNav = () => (
   <div className="sideNav">
     <h1>
-      <Link to="/">Site Title</Link>
+      <Link to="/">Warren Whipple</Link>
     </h1>
     <ul>
       <li>
